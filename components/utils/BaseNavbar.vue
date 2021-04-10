@@ -2,9 +2,9 @@
   v-app-bar(fixed flat :class="{'transparent': !invertedNav}" :dark="!invertedNav")
     img(src="logo.svg" height="40")
     v-spacer
-    .nav-link element
-    .nav-link element
-    .nav-link element
+    .nav-link(cursor-icon="subtle") element
+    .nav-link(cursor-icon="subtle") element
+    .nav-link(cursor-icon="subtle") element
 </template>
 
 <script>

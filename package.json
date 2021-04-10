@@ -11,15 +11,13 @@
   "dependencies": {
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/vuetify": "^1.11.3",
-    "aos": "^3.0.0-beta.6",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "core-js": "^3.8.3",
     "minify-css-string": "^1.0.0",
     "nuxt": "^2.14.12",
     "nuxt-i18n": "^6.20.0",
-    "overlayscrollbars": "^1.13.1",
-    "overlayscrollbars-vue": "^0.2.2",
-    "vue-tabler-icons": "^1.8.1"
+    "vue-tabler-icons": "^1.8.1",
+    "vue2-perfect-scrollbar": "^1.5.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
@@ -30,6 +28,7 @@
     "eslint-loader": "^4.0.2",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-webpack-plugin": "^2.5.0",
+    "nuxt-gsap-module": "^1.2.0",
     "prettier": "^2.2.1",
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.1.0",

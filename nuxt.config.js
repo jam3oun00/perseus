@@ -34,9 +34,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: "~plugins/VueTablerIcons.js", ssr: false },
-    { src: "~plugins/overlayscrollbars.js" },
-    { src: "~plugins/aos", ssr: false },
     { src: "~plugins/i18n.js" },
+    { src: "~plugins/PerfectScrollbar.js", ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -50,6 +49,7 @@ export default {
     "@nuxtjs/vuetify",
     "@nuxtjs/eslint-module",
     "@nuxtjs/style-resources",
+    "nuxt-gsap-module",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -69,7 +69,19 @@ export default {
     ],
     // sass: ["~vuetify/src/styles/styles.sass"]
   },
-
+  gsap: {
+    extraPlugins: {
+      /**
+       * When you enable them, plugins are
+       * automatically registered and available globally
+       */
+      scrollTo: true,
+      scrollTrigger: true,
+    },
+    extraEases: {
+      expoScaleEase: true,
+    },
+  },
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
